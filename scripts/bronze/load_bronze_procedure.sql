@@ -1,3 +1,15 @@
+/*
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Load the data from the CSV files to the bronze layer schemas.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+It will TRUNCATE the bronze tables before loading data and then
+will use the COPY command to load the data.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+USAGE EXAMPLE: 
+	CALL bronze.load_bronze();
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
+
 CREATE OR REPLACE PROCEDURE bronze.load_bronze()
 LANGUAGE plpgsql
 AS $$
