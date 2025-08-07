@@ -1,4 +1,3 @@
-prd_id,prd_key,prd_nm,prd_cost,prd_line,prd_start_dt,prd_end_dt
 210,CO-RF-FR-R92B-58,HL Road Frame - Black- 58,,R ,2003-07-01,
 211,CO-RF-FR-R92R-58,HL Road Frame - Red- 58,,R ,2003-07-01,
 212,AC-HE-HL-U509-R,Sport-100 Helmet- Red,12,S ,2011-07-01,2007-12-28
@@ -396,3 +395,4 @@ prd_id,prd_key,prd_nm,prd_cost,prd_line,prd_start_dt,prd_end_dt
 604,BI-RB-BK-R19B-44,Road-750 Black- 44,344,R ,2013-07-01,
 605,BI-RB-BK-R19B-48,Road-750 Black- 48,344,R ,2013-07-01,
 606,BI-RB-BK-R19B-52,Road-750 Black- 52,344,R ,2013-07-01,
+
