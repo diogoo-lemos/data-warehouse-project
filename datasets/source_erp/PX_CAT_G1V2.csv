@@ -1,4 +1,3 @@
-ID,CAT,SUBCAT,MAINTENANCE
 AC_BR,Accessories,Bike Racks,Yes
 AC_BS,Accessories,Bike Stands,No
 AC_BC,Accessories,Bottles and Cages,No
@@ -35,4 +34,5 @@ CO_PD,Components,Pedals,No
 CO_RF,Components,Road Frames,Yes
 CO_SA,Components,Saddles,No
 CO_TF,Components,Touring Frames,Yes
+
 CO_WH,Components,Wheels,Yes
