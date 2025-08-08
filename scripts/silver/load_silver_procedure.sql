@@ -6,13 +6,16 @@ silver layer.
 This script will transform the data from the bronze layer 
 in order to be studied in the gold layer.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Transformations: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     Table silver.crm_cust_info: 
         Removes all existing records.
         Inserts the most recent customer record per cst_id.
         Trims names.
         Converts marital_status from M and S to "Married" and "Single"
         and Gender to "Male" and "Female".
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     Table silver.crm_prd_info:
         Clears the table.
         Extracts product category ID.
@@ -20,20 +23,24 @@ Transformations:
         Maps product line codes into full names like "Mountain".
         Sets missing cost to 0.
         Calculates prd_end_dt as one day before the next start date for the same product.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     Table silver.crm_sales_details:
         Clears the table.
         Parses sales dates (YYYYMMDD) into actual date values, setting invalid/zero dates to NULL.
         Recalculates sls_sales if missing, non-positive, or inconsistent with quantity × price.
         Derives price if missing or invalid (sales / quantity).
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     Table silver.erp_cust_az12
         Clears the table.
         Removes "NAS" prefix from cid values if present.
         Sets future birthdates to NULL.
         Normalizes gender values to "Female", "Male", or "n/a".
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -    
     Table silver.erp_loc_a101
         Clears the table.
         Removes hyphens from cid.
         Maps "DE" to "Germany", "US"/"USA" to "United States", blanks or nulls to "n/a".
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     Table silver.erp_px_cat_g1v2
         Clears the table.
         Copies data from the bronze layer without transformation.
