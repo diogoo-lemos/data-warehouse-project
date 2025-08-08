@@ -8,7 +8,7 @@ This repository contains a data warehouse implementation, including ETL processe
 
 ## Dataset Reference
 
-Original dataset and project guidance from [DataWithBaraa](https://github.com/DataWithBaraa/sql-data-warehouse-project)
+Original dataset and project guidance from [DataWithBaraa](https://github.com/DataWithBaraa/sql-data-warehouse-project).
 
 ## Repository Structure
 
@@ -49,3 +49,4 @@ Silver Layer: Clean, normalize, and enrich the data from the bronze layer.
 Gold Layer: Organize into star schema for analytics-ready-data.
 
 ## Thank you!!
+dmls
